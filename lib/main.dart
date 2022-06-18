@@ -22,6 +22,7 @@ class _AppState extends State<App> {
   void initState() {
     router = GoRouter(
       initialLocation: '/auth/login',
+      urlPathStrategy: UrlPathStrategy.path,
       debugLogDiagnostics: true,
       routes: [
         GoRoute(
